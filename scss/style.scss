@@ -1,0 +1,114 @@
+/*
+
+@import
+$var
+@mixin & @include
+
+@extend
+
+grouping
+
+*/
+
+@import "general";
+
+/* PARTICLES *\
+\*************/
+#particles-js{
+	background-color: #252424;
+}
+
+/* COMING *\
+\**********/
+#coming {
+	#logo {@extend %main-color;}
+	#soon {
+		position: absolute;
+		right: 50px; left: 50px;
+		top: 120px;
+		p.display-4 {
+			color: #72ff62;
+			font-size: 3rem;
+		}
+		#countdown {
+			display: inline-block;
+			width: auto;
+			margin-top: 4rem!important;
+			span {
+				@extend %main-color;
+				font-size: 1.4rem;
+			}
+			.flip-clock-label {
+			    width: 120px;
+    			right: -128px;
+			}
+			.flip-clock-dot {
+				@extend %main-bg;
+			}
+		}
+	}
+	#travel {
+		position: absolute;
+		right: 40px; left: 40px;
+		top: 185px;
+	}
+	#btns {
+		position: absolute;
+		right: 0; left: 0;
+		bottom: 120px;
+		width: 100%;
+		button {cursor: pointer;}
+	}
+}
+
+/* FOOTER *\
+\**********/
+footer {
+	position: absolute;
+	right: 0; left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	padding-top: 15px;
+	background-color: #191919;
+	overflow: hidden;
+	font-size: 1.1rem;
+	#btns {
+		margin-top: -50px !important;
+	}
+	ul {
+		margin: 0;
+		li.list-inline-item:not(:last-child) {
+		    margin-right: 10px;
+		}
+		a {
+			span {
+				color: #fff;
+				@include transition($time: 0.2s);
+			}
+			span:hover {
+				@extend %main-color;
+			}
+		}
+	}
+	p {
+		span.fa-heart {
+			color: #72ff62;
+		}
+	    margin: 0;
+		a#moi {@extend %main-color;}
+	}
+}
+
+/* #overlay *\
+\************/
+#overlay {
+	position: absolute;
+	top: 0; bottom: 0;
+	right: 0; left: 0;
+	width: 100vw;
+	margin-bottom: 30vh;
+	background-color: transparent;
+}
+
+@import "responsive";

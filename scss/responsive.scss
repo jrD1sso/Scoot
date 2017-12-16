@@ -1,0 +1,66 @@
+
+
+@media (min-width: 768px) {
+	
+}
+
+@media (min-width: 768px) AND (max-width: 991px) {
+	
+}
+
+@media (max-width: 991px) {
+	#coming #soon {
+		top: 180px !important;
+		p.display-3 {
+			font-size: 2.8rem !important;
+		}
+		p.lead {
+			font-size: 1.1rem !important;
+		}
+	}
+	footer {
+		font-size: 1.1rem;
+	    height: 50px;
+   		padding-top: 12px;
+		ul .list-inline-item:not(:last-child) {
+			margin-right: 7px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+ 	#coming {
+ 		#logo .h2 {font-size: 1.85rem;}
+ 		#btns .btn-sm {
+ 			font-size: .75rem;
+ 		}
+	  	#soon {
+			top: 120px !important;
+			p.display-3 {
+			font-size: 2.6rem !important;
+			}
+			p.lead {
+				font-size: .8rem !important;
+			}
+		}
+		#travel {
+			right: 20px; left: 20px;
+			top: 350px;
+			div#earth img {
+				width: 110px !important;
+			}
+			div#rocket img {
+				width: 100px !important;
+				margin-top: 10px;
+			}
+		}
+	}
+	footer {
+		font-size: 1rem;
+	    height: 40px;
+   		padding-top: 11px;
+		ul .list-inline-item:not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+}
